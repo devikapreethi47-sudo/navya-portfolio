@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Navya S M</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">NAVYA.SM</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="certifications.html">Certifications</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="about">
+            <div class="container">
+                <h2 class="section-title fade-in">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-text fade-in">
+                        <p style="margin-bottom: 1.5rem;">
+                            Hello! I'm Navya S M, a dedicated professional with a strong foundation in problem-solving and a passion for creating innovative solutions. My journey has been driven by a constant desire to learn and grow in a fast-paced environment.
+                        </p>
+                        <p style="margin-bottom: 1.5rem;">
+                            With a keen eye for detail and a commitment to quality, I strive to deliver excellence in everything I do. I believe in the power of collaboration and am always eager to contribute my skills to impactful projects.
+                        </p>
+                        <div class="about-info">
+                            <div class="info-item"><strong>Name:</strong> Navya S M</div>
+                            <div class="info-item"><strong>Email:</strong> navya@example.com</div>
+                            <div class="info-item"><strong>Location:</strong> India</div>
+                            <div class="info-item"><strong>Availability:</strong> Open for opportunities</div>
+                        </div>
+                        <div style="margin-top: 2.5rem;">
+                            <a href="#" class="btn btn-primary" id="downloadResume">Download Resume</a>
+                            <a href="#" class="btn btn-outline" style="margin-left: 1rem;" id="viewResume">View Resume</a>
+                        </div>
+                    </div>
+                    <div class="about-skills fade-in">
+                        <h3 style="margin-bottom: 1.5rem; color: var(--primary-color);">My Skills</h3>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Project Management</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Communication</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 95%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Problem Solving</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Generative AI</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 80%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Navya S M. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <style>
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            gap: 4rem;
+        }
+
+        .about-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-top: 2rem;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1.5rem;
+            border-radius: 8px;
+        }
+
+        .info-item strong {
+            color: var(--primary-color);
+            margin-right: 0.5rem;
+        }
+
+        .skill-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .skill-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .skill-bar {
+            height: 8px;
+            background: var(--surface-color);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .skill-progress {
+            height: 100%;
+            background: var(--primary-color);
+            border-radius: 4px;
+        }
+
+        @media (max-width: 992px) {
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+    </style>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Placeholder functionality for resume
+        document.getElementById('downloadResume').addEventListener('click', (e) => {
+            e.preventDefault();
+            alert("Resume file not found in the directory. Please add 'resume.pdf' to the folder to enable download.");
+        });
+        document.getElementById('viewResume').addEventListener('click', (e) => {
+            e.preventDefault();
+            alert("Resume file not found in the directory. Please add 'resume.pdf' to the folder to enable viewing.");
+        });
+    </script>
+</body>
+</html>
